@@ -1,0 +1,152 @@
+navigation of lines
+   h  k l
+     j 
+
+start of line 0
+
+end of line $
+
+
+ne word forward  w
+
+one word backword b
+
+delete one chanaracter x
+
+delete one line dd
+
+
+delete 4 line  4dd
+
+
+go to the  begining of the file   gg
+
+
+go to the end of the file   G
+
+
+so now delete the content of the entire file ???
+
+go to begining ---> gg  dG  <--- delete till end of file G
+
+to go to a particilar word in a sentence , in insert mode type f and the startic alhphabet of the word
+eg mary had a little lamb
+
+f h  will take you to the word had
+
+so go to the second occurence of the alphabet 2f a will take you to a of had
+
+to to go a particilar line :10 will take you to line 10
+
+to go 5 lines up 5k
+
+6 line down 6j
+
+this is a pattern as u can seee
+
+2f x will take you to the second occurrence of x in a line
+5F a will take you the the 5th occurrence of the word a backwords
+
+4dd will delete 4 line
+
+gg to top of the file
+
+G to the bottom of the file
+
+4G will take you the 4th line down from the current position in the file
+
+
+#### settings for .vimrc
+
+syntax on
+
+set number 
+
+##
+
+
+class abc {
+public static void main(){
+}
+
+}
+
+how do u delete everything between {} use the i opertaor
+
+keep the cursor after { nd then ci} will delete the content 
+
+
+
+how to go to  particluar line number in shell ??
+
+ng or nG    
+n= line number , G from bottom , g from top
+
+
+cut and paste 
+
+dd  ->>  P
+
+dw  -->> delete one word and copy --> P
+
+d3w --> delete 3 words and paste --> P
+
+copy and paste 
+
+yw --> P
+
+5 words copy 
+y5w --> P
+
+
+seraching .......
+
+in command mode 
+
+/typeword   and enter
+to go to the next , press the n key
+to back to the previous search result type N 
+
+the above /search will yield results going only forward ie forward search
+
+what do you have to do to search backwards
+?search  and hit enter
+
+n will take you to the previous word 
+N will take you to the next word in backwards search ( reeversed from forward search)
+
+ 
+how about incremental search ???
+-- set this option in .vimrc
+set incsearch 
+
+then try the same searches as above ie with fwd / and ?
+
+-- case insensitive search ???
+
+-- set ignorecase in .vimrc
+
+highlight search ??
+
+-- set hlsearch in .vimrc
+
+
+
+
+goto line number 23
+
+:23 and hit enter
+
+
+---> key mappings withim vim 
+:map <F2> :!mcn clean package<CR>   and hit enter
+once done in command mode just hit f2 function key ,, see the magic , mvn will clean package in the same window :)
+
+
+
+
+
+
+
+ 
+
