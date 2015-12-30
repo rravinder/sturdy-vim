@@ -145,6 +145,14 @@ once done in command mode just hit f2 function key ,, see the magic , mvn will c
 
 
 
+--->>
+plugins got to vim/pathogen on git hub
+
+.vim/bundle folder is added , follow the commands there 
+
+then to add a plugin cd to bundle folder and add nerdtree -- search for nerdtree in github and follow the instructions
+
+
 
 
 
