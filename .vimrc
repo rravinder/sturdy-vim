@@ -11,11 +11,11 @@ colorscheme delek
 
 nmap <silent> <F4> :NERDTreeToggle<CR>
 
-nmap <silent> <F1> :!mvn clean package<CR> 
+nmap <F1> :!mvn clean package<CR> 
 
-nmap <silent> <F2> :!mvn clean package -DskipTests<CR>
+nmap <F2> :!mvn clean package -DskipTests<CR>
 
-nmap <silent> <F3> :!mvn clean install<CR>
+nmap <F3> :!mvn clean install<CR>
 
 
 
