@@ -1,0 +1,118 @@
+########### movement around the page ######
+# technique 1
+High --> H to the top of the page
+Middle --> M to the middle of the page
+Low --> L to the bottom of the page 
+
+how are these useful ??? say you want to go the a particular line , go to the closest line
+H M or L will do it and then use j or k
+
+#technique 2
+cntrl + u  --> scroll up ( normally dictaed by size of buffer?? right now moves up 20 lines)
+cntrl + d  --> scroll down
+
+#technique 3
+23G  --> will take you to line 23 ( all the commands above done need to be pasted using :)
+
+#technique 4
+search for the word and go to that approximate line and then use jk
+/word  enter ,  cursor will jump to the line
+
+##########################################################
+
+
+######### Movement within a line ################
+# technique 1
+w --> puts the cursor below the first character of the next word
+b --> backwards movement , puts the cursor below the first char of the prev word
+e --> put the cursor below the last character of the prsent word or the last char of next word
+
+#technique 2
+Now you are in the line and want to jump to a specific word  eg Awesome?
+fA and enter , this will take u to the first A in that line and in this case we assume Awesome is the only word that starts with A
+; for next  A and then again press ; for next A 
+
+FA is backwards and for repitition its , and not ; for the previous A
+
+THE ABOVE WILL PUT THE CURSOR RIGHT BELOW THE CHARACTER
+
+TO HAVE THE CURSOR ONE SPACE AHEAD OF THE CHARACTER USE THE FOLLOWING
+
+tA will place it just before A and then ; for next next
+TA will place it before the previous word and then , for previous 
+
+
+##########################################################
+
+
+########### editing a file #######################
+
+#technique to delete
+dd --> deletes a line but its in command mode
+cc --> deletes the line but puts it in insert mode
+
+>>  --> indent the line 
+== ---> go back to original
+
+however from the above it should be noted is the motion is just the first character
+ie , d c > =
+these can be used with other combinations eg delete a word --> dw ( w is from moving within a line)
+
+#combinations
+dw --> delete a word and stay in command mode
+cw --> delete a word and go into insert mode
+
+#combinations with f and t 
+the quick brown fox, jumped over the wall !
+
+#delete till ,  ---> dt,  remained will be --> , jumped over the wall !
+#delete everything --> df!  or dd 
+
+### ct, will put in insert move
+
+## combinations with other motions
+e --> takes you to the last character of the next word
+de --> delete the word ie from the current cursor position to the last character of the next word
+2e --> last char of the second word
+d2e --> delete upto the last character of the second word
+d/searchword  --> delete upto the firt occurrence of the searchword
+
+## how about j and k
+j --> next line
+dj --> delete current line and the next line
+k --> previous line 
+dk --> delete current line and also upto the begining of the previous line  
+
+
+#########################################################
+
+#######relative number and navigation #######
+:set relativenumber
+
+#technique to move around 
+12k --> will move u 12 positions from the current one
+5j --> will take you 5 positions lower 
+
+5+ --> will take you 5 positions lower and place the cursor below the first char of the starting word.
+
+############################################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
