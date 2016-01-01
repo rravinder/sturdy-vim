@@ -26,6 +26,10 @@ search for the word and go to that approximate line and then use jk
 w --> puts the cursor below the first character of the next word
 b --> backwards movement , puts the cursor below the first char of the prev word
 e --> put the cursor below the last character of the prsent word or the last char of next word
+W  --> this will jump a white space , make naivatigation a lot easier then u have , . etc 
+	cos vim treats these are words 
+
+
 
 #technique 2
 Now you are in the line and want to jump to a specific word  eg Awesome?
@@ -96,6 +100,68 @@ dk --> delete current line and also upto the begining of the previous line
 5+ --> will take you 5 positions lower and place the cursor below the first char of the starting word.
 
 ############################################
+
+############## vim search tips #############
+set ignorecase --> find all instances
+
+howevere if the first letter is a Capital or any of the letter is capital then vim should 
+go into the case senstive search
+this can be accomplished by 
+
+set smartcase
+
+########search history ?????? ######
+in command mode hit --> q/  this will open a search buffer of the previously searched words
+u can select by using any of the motion command ie jk etc and hit enter , it will search that word
+
+#########search and replace #########
+:s/hola/hello/gci
+s -->  search range
+hola --> search for hola
+hello --> replace by hello
+gci  --> flags to prompt
+
+eg:
+:s/hola/hello
+replace in the same line = s
+
+:%s/hola/hello
+replace in the entire file
+
+
+you can specifify the range 
+:23,45s/hola/hello/gci
+
+bwteen the lines of 23 and 45 search for hola and prompt before replacing
+
+
+#############################################
+
+####### text objects ##########
+
+#dap --> delete around paragraph
+
+how does vim know its a paragrapgh ???   blank line above and below a group of lines is a paragrapgh
+
+# =ap  --> indent around paragraph
+
+# another way to do the same ???
+ visual mode -- highligh by using j  and then press ==
+
+#### how about formatting?
+
+# gqip --> format in the para
+
+=ip --> will format inside the para
+
+
+# ci)  --> delete everything inside ()
+eg :  ( hello world ) --> assuming the curson anywhere inside the () 
+cip will result in () and the cursor will be inside the () in insert mode
+
+similiaryly  ci}  or ci] or ci"
+
+
 
 
 
