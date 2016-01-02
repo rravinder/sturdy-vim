@@ -1,0 +1,6 @@
+#install zsh via curl
+#install pathogen from github , carefully read instaruction cos u need to chance the .vimrc
+#install oh-myzsh from robbyrussel on github
+#install nerdtree --> go into ~/.vim/bundle and clone the repository
+#install https://github.com/msanders/snipmate.vim , 	for templating , add new templates in /bundle/snipmate/snippets/xml.snippets
+
